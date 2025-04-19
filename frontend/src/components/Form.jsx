@@ -1,6 +1,6 @@
 import { useState } from "react";
 import api from "../api";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
 import "../styles/Form.css"
 import LoadingIndicator from "./LoadingIndicator";
@@ -54,6 +54,11 @@ function Form({ route, method }) {
             <button className="form-button" type="submit">
                 {name}
             </button>
+            {method === "login" && (
+            <p style={{ marginTop: "1rem", textAlign: "center" }}>
+                Don't have an account? <Link to="/register">Register</Link>
+            </p>
+        )}
         </form>
     );
 }
