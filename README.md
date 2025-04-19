@@ -92,4 +92,9 @@ DB_HOST=localhost
 DB_PORT=your_db_port
 
 
+📬 Contact
+- Developer: Zubii07
+- GitHub Repo: github.com/Zubii07/Django-Notes-App
+- Feel free to star ⭐ the repo or open issues for suggestions or improvements!
 
+Happy coding ✨
